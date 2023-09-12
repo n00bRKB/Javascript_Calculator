@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: burlywood;
+}
+
+#calculator {
+  background-color: black;
+  color: aquamarine;
+  border: 10px solid coral;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  font-size: large;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.display {
+  padding: 0;
+  border: 0;
+  height: 30px;
+  width: 90%;
+  text-align: right;
+  color: black;
+  background-color: yellowgreen;
+  padding-right: 5px;
+}
+
+#display-items {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  width: 342px;
+  text-align: right;
+  color: black;
+  background-color: yellowgreen;
+  padding-right: 5px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.buttons {
+  font-size: large;
+  font-weight: bold;
+  display: grid;
+  text-align: center;
+  margin: 10px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-template-columns: 90px 90px 90px 90px;
+}
+
+.clear,
+.c,
+.divide,
+.multiply,
+.subtract,
+.add,
+.equals,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero,
+.decimal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divide,
+.subtract,
+.multiply,
+.add {
+  background-color: midnightblue;
+  margin: 1px;
+}
+
+.divide:hover {
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+.subtract:hover {
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+.multiply:hover {
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+.add:hover {
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+
+.clear {
+  background-color: red;
+  grid-area: 1 / 1 / 2 / 2;
+  margin: 1px;
+}
+.clear:hover {
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+
+.c {
+  background-color: red;
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 1px;
+}
+
+.c:hover {
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+
+.seven,
+.eight,
+.nine,
+.four,
+.five,
+.six,
+.one,
+.two,
+.three,
+.zero,
+.decimal {
+  background-color: darkblue;
+  margin: 1px;
+}
+
+.equals {
+  background-color: rgb(4, 62, 255);
+  margin: 1px;
+}
+
+.seven:hover,
+.eight:hover,
+.nine:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.one:hover,
+.two:hover,
+.three:hover,
+.zero:hover,
+.decimal:hover,
+.equals:hover {
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+
+.zero {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.equals {
+  grid-area: 4 / 4 / 6 / 5;
+}
